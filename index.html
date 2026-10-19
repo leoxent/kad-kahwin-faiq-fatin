@@ -4,176 +4,177 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Walimatul Urus Faiq &amp; Fatin</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Pinyon+Script&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f7f2e8;--fg:#22302a;--card:#fffdf8;--line:#e2d6bc;--green:#25402f;--gold:#b8924a;--soft:#6b7a70;color-scheme:light;
+:root{--ink:#3f4a38;--soft:#6f7b66;--sage:#5f6f55;--glass:rgba(255,255,255,.58);--edge:rgba(255,255,255,.85);--m1:#f1f3ee;--m2:#dde3d8;--wash:rgba(244,246,242,.5);--on:#fff;color-scheme:light;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a15;--fg:#efe8d8;--card:#1a251e;--line:#34463a;--soft:#a3b0a6;--gold:#d3ad66;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#121a15;--fg:#efe8d8;--card:#1a251e;--line:#34463a;--soft:#a3b0a6;--gold:#d3ad66;color-scheme:dark}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e6eadf;--soft:#aab5a0;--sage:#9db08f;--glass:rgba(24,32,24,.6);--edge:rgba(255,255,255,.14);--m1:#161c16;--m2:#0f130f;--wash:rgba(12,16,12,.55);--on:#17201a;color-scheme:dark}}
+:root[data-theme="dark"]{--ink:#e6eadf;--soft:#aab5a0;--sage:#9db08f;--glass:rgba(24,32,24,.6);--edge:rgba(255,255,255,.14);--m1:#161c16;--m2:#0f130f;--wash:rgba(12,16,12,.55);--on:#17201a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Figtree,system-ui,sans-serif;overflow-x:hidden}
-h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.1;margin:0}
-a{color:inherit}
-.hero{background:var(--green);color:#f3ead4;text-align:center;padding:72px 24px 64px;position:relative;overflow:hidden;
-background-image:linear-gradient(45deg,#ffffff0d 25%,transparent 25%,transparent 75%,#ffffff0d 75%),linear-gradient(45deg,#ffffff0d 25%,transparent 25%,transparent 75%,#ffffff0d 75%);background-size:36px 36px;background-position:0 0,18px 18px}
-.hero p{margin:0}
-.hero .to{font-size:14px;opacity:.85;margin-bottom:28px}
-.hero .to b{display:block;font-size:20px;font-family:"Cormorant Garamond",serif;color:#e8cf9a}
-.hero h1{font-size:clamp(46px,14vw,84px);color:#f7e9c4;margin:14px 0}
-.hero .amp{font-style:italic;font-weight:500;color:#d3ad66}
-.date{font-size:18px;letter-spacing:.04em}
-#cd{display:flex;gap:10px;justify-content:center;margin-top:28px}
-#cd div{background:#0000002e;border:1px solid #d3ad6666;border-radius:10px;padding:10px 0;width:68px}
-#cd b{display:block;font:700 28px "Cormorant Garamond",serif;color:#f7e9c4}
-#cd span{font-size:12px;opacity:.8}
-main{max-width:560px;margin:0 auto;padding:0 20px 80px}
-section{padding:44px 0 0}
-h2{font-size:34px;text-align:center;color:var(--gold);margin-bottom:6px}
-.sub{text-align:center;color:var(--soft);margin:0 0 20px;font-size:15px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
-.btn{display:inline-block;background:var(--green);color:#f7e9c4;border:0;border-radius:999px;padding:11px 20px;font:600 15px Figtree,sans-serif;text-decoration:none;cursor:pointer;text-align:center}
-.btn.alt{background:transparent;color:var(--fg);border:1px solid var(--gold)}
-.row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-.btn:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-.list{display:grid;gap:10px}
-.list .card{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-.cal{text-align:center}
-.cal big{display:block;font:700 64px/1 "Cormorant Garamond",serif;color:var(--gold)}
-label{display:block;font-size:14px;margin:14px 0 4px;color:var(--soft)}
-input,textarea{width:100%;font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
-.seg{display:flex;gap:8px}
-.seg label{flex:1;margin:0;color:var(--fg)}
-.seg input{position:absolute;opacity:0;width:1px}
-.seg span{display:block;text-align:center;border:1px solid var(--line);border-radius:10px;padding:10px;cursor:pointer}
-.seg input:checked+span{background:var(--green);color:#f7e9c4;border-color:var(--green)}
-.seg input:focus-visible+span{outline:3px solid var(--gold)}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.gal div,.gal img{aspect-ratio:1;border-radius:10px;width:100%;object-fit:cover;background:linear-gradient(135deg,var(--line),var(--card));display:grid;place-items:center;color:var(--soft);font-size:12px}
-.acc{font:700 26px "Cormorant Garamond",serif;letter-spacing:.06em;margin:6px 0}
-.wish li{margin:8px 0}
-.note{font-size:13px;color:var(--soft);text-align:center;margin-top:10px}
-#petals{position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden}
-#petals i{position:absolute;top:-30px;width:12px;height:16px;border-radius:70% 0 70% 0;background:#e9c9c0;opacity:.75;animation:fall linear infinite}
-@keyframes fall{to{transform:translate(var(--dx),110vh) rotate(540deg)}}
-#cover{position:fixed;inset:0;z-index:20;background:var(--green);color:#f7e9c4;display:grid;place-content:center;text-align:center;padding:24px;transition:transform .9s ease,opacity .9s;
-background-image:linear-gradient(45deg,#ffffff0d 25%,transparent 25%,transparent 75%,#ffffff0d 75%);background-size:36px 36px}
+body{margin:0;color:var(--ink);font:500 19px/1.65 "Cormorant Garamond",Georgia,serif;text-align:center;overflow-x:hidden;background:var(--m2)}
+.bg,#cover{background:linear-gradient(180deg,var(--m1),var(--m2))}
+.bg{position:fixed;inset:0;z-index:-1}
+.bg.has,#cover.has{background:url(bg.jpg) center/cover no-repeat}
+.bg::after,#cover::after{content:"";position:absolute;inset:0;background:var(--wash);z-index:-1}
+.card{position:relative;max-width:520px;margin:96px auto 56px;padding:76px 30px 40px;border-radius:150px 150px 26px 26px;background:var(--glass);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid var(--edge);box-shadow:0 12px 44px rgba(60,75,55,.14)}
+@media (max-width:560px){.card{margin:88px 12px 44px;padding:68px 20px 34px;border-radius:110px 110px 22px 22px}}
+.flora{position:absolute;top:-84px;left:50%;width:min(920px,150%);height:280px;transform:translateX(-50%);pointer-events:none;z-index:2;
+background:radial-gradient(closest-side at 22% 38%,#cfd8c6aa,transparent),radial-gradient(closest-side at 50% 25%,#ffffffcc,transparent),radial-gradient(closest-side at 78% 40%,#cfd8c6aa,transparent)}
+.flora.has{background:url(bunga.png) center top/contain no-repeat}
+.ar{font:400 clamp(28px,8vw,36px)/1.6 Amiri,"Noto Naskh Arabic",serif;color:var(--sage);margin:0 0 6px;position:relative;z-index:3}
+.mono{height:92px;position:relative;z-index:3;margin-bottom:10px}
+.mono .sc{font:400 54px/1 "Pinyon Script",cursive;position:absolute;left:calc(50% - 30px);top:0}
+.mono .sr{font:500 42px/1 "Cormorant Garamond",serif;position:absolute;left:calc(50% - 8px);top:44px}
+.it{font-style:italic;letter-spacing:.04em}
+.cap{letter-spacing:.14em;text-transform:uppercase;font-weight:700;font-size:17px}
+.sec{margin-top:32px}
+.names{font:400 clamp(44px,13vw,62px)/1.15 "Pinyon Script",cursive;color:var(--sage);margin:0}
+.names small{display:block;font-size:.55em;line-height:1.1}
+.date{font-size:21px}
+.btn{display:inline-block;background:var(--sage);color:var(--on);border:0;border-radius:999px;padding:10px 22px;font:700 16px "Cormorant Garamond",serif;letter-spacing:.06em;text-decoration:none;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--sage)}
+.btn:focus-visible{outline:3px solid var(--sage);outline-offset:3px}
+.row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+hr{border:0;height:1px;background:linear-gradient(90deg,transparent,var(--sage),transparent);margin:36px 0 0;opacity:.5}
+#cd{display:flex;gap:8px;justify-content:center}
+#cd div{width:70px;padding:8px 0;border:1px solid var(--sage);border-radius:12px;background:var(--glass)}
+#cd b{display:block;font-size:30px;line-height:1.1}
+#cd span{font-size:14px;color:var(--soft)}
+.ct{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;border:1px solid var(--edge);background:var(--glass);border-radius:14px;padding:12px 14px;margin-top:10px;text-align:left}
+.acc{font:700 28px "Cormorant Garamond",serif;letter-spacing:.08em;margin:2px 0}
+#petals{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+#petals i{position:absolute;top:-30px;width:11px;height:15px;border-radius:70% 0 70% 0;background:#fff;opacity:.85;box-shadow:0 0 0 1px #b9c6ae55;animation:fall linear infinite}
+@keyframes fall{to{transform:translate(var(--dx),112vh) rotate(540deg)}}
+#cover{position:fixed;inset:0;z-index:30;display:grid;place-content:center;padding:24px;transition:transform .9s ease,opacity .9s}
 #cover.open{transform:translateY(-100%);opacity:0;pointer-events:none}
-#cover h2{color:#f7e9c4;font-size:44px;margin:10px 0 24px}
-#cover .btn{background:#d3ad66;color:#22302a}
-#music{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:10;width:46px;height:46px;border-radius:50%;border:1px solid var(--gold);background:var(--card);color:var(--fg);font-size:18px;cursor:pointer}
-footer{text-align:center;color:var(--soft);font-size:14px;padding:0 20px 40px}
-@media (prefers-reduced-motion:reduce){#petals{display:none}#cover{transition:none}html{scroll-behavior:auto}}
+#cover .names{margin:6px 0 18px}
+#music{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:20;width:46px;height:46px;border-radius:50%;border:1px solid var(--sage);background:var(--glass);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:var(--ink);font-size:20px;cursor:pointer}
+#music[hidden]{display:none}
+@media (prefers-reduced-motion:reduce){#petals{display:none}#cover{transition:none}}
 </style>
 </head>
 <body>
+<div class="bg" id="bg"></div>
+<div id="petals" aria-hidden="true"></div>
+<button id="music" hidden aria-label="Pasang atau henti lagu">♪</button>
 
 <div id="cover">
-  <p>Walimatul Urus</p>
-  <h2>Faiq &amp; Fatin</h2>
-  <p id="cvTo"></p>
+  <p class="ar" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <p class="cap">Walimatul Urus</p>
+  <p class="names">Faiq <small>&amp;</small> Fatin</p>
+  <p class="it" id="cvTo"></p>
   <div><button class="btn" id="openBtn">Buka Jemputan</button></div>
 </div>
-<div id="petals" aria-hidden="true"></div>
-<button id="music" aria-label="Pasang atau henti lagu" title="Lagu">♪</button>
 
-<header class="hero">
-  <p class="to" id="heroTo"></p>
-  <p>Dengan penuh kesyukuran, kami menjemput anda ke majlis perkahwinan</p>
-  <h1>Faiq <span class="amp">&amp;</span> Fatin</h1>
-  <p class="date">Sabtu, 5 Disember 2026 · 11.00 pagi hingga 4.00 petang</p>
-  <div id="cd" aria-live="off"><div><b id="d">0</b><span>Hari</span></div><div><b id="h">0</b><span>Jam</span></div><div><b id="m">0</b><span>Minit</span></div><div><b id="s">0</b><span>Saat</span></div></div>
-</header>
+<main class="card">
+  <div class="flora" id="flora" aria-hidden="true"></div>
+  <p class="ar" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <div class="mono" aria-hidden="true"><span class="sc">F</span><span class="sr">F</span></div>
+  <p class="it" id="to"></p>
+  <p class="it">Assalamualaikum wbt dan Salam Sejahtera</p>
 
-<main>
-<section id="cal">
-  <h2>Tarikh</h2>
-  <p class="sub">Simpan dalam kalendar supaya tak terlupa.</p>
-  <div class="card cal"><big>5</big><div>Disember 2026, Sabtu</div><div style="color:var(--soft)">11.00 pagi hingga 4.00 petang</div>
-  <p><a class="btn" id="gcal" target="_blank" rel="noopener">Tambah ke Google Calendar</a></p></div>
-</section>
-
-<section id="nav">
-  <h2>Lokasi</h2>
-  <p class="sub">Dewan Seri Melati, Jalan Contoh 1, Kuala Lumpur</p>
-  <div class="row"><a class="btn" id="gmap" target="_blank" rel="noopener">Google Maps</a><a class="btn alt" id="waze" target="_blank" rel="noopener">Waze</a></div>
-</section>
-
-<section id="contacts">
-  <h2>Hubungi Kami</h2>
-  <p class="sub">Ada soalan? Hubungi keluarga kami.</p>
-  <div class="list" id="ct"></div>
-</section>
-
-<section id="rsvp">
-  <h2>Kehadiran &amp; Ucapan</h2>
-  <p class="sub">Maklumkan kehadiran dan tinggalkan doa untuk kami.</p>
-  <div class="card" style="text-align:center">
-    <p style="margin-top:0">Isi borang ringkas, ambil masa seminit sahaja.</p>
-    <a class="btn" id="formBtn" target="_blank" rel="noopener">Isi Borang RSVP</a>
+  <div class="sec">
+    <p class="cap" style="margin:0">Nama Bapa Pengantin<br>&amp;<br>Nama Ibu Pengantin</p>
   </div>
-</section>
+  <p class="it sec">Dengan penuh hormat, kami menjemput Dato’ / Datin / Tuan / Puan / Encik / Cik ke majlis resepsi perkahwinan anakanda kami</p>
 
-<section id="gift">
-  <h2>Tanda Kasih</h2>
-  <p class="sub">Kehadiran anda sudah cukup. Jika ingin memberi, boleh melalui:</p>
-  <div class="card" style="text-align:center">
-    <div>Maybank</div><div class="acc" id="acc">1234 5678 9012</div><div>Faiq bin Contoh</div>
-    <p><button class="btn alt" id="copy">Salin nombor akaun</button></p>
+  <div class="sec"><p class="names">Faiq <small>&amp;</small> Fatin</p></div>
+
+  <div class="sec">
+    <p class="cap date" style="margin:0">Sabtu, 5 Disember 2026</p>
+    <p class="it" style="margin:4px 0 0">11.00 pagi hingga 4.00 petang</p>
+    <div class="row"><a class="btn alt" id="gcal" target="_blank" rel="noopener">Simpan dalam Kalendar</a></div>
   </div>
-</section>
 
+  <div class="sec">
+    <div id="cd"><div><b id="d">0</b><span>Hari</span></div><div><b id="h">0</b><span>Jam</span></div><div><b id="m">0</b><span>Minit</span></div><div><b id="s">0</b><span>Saat</span></div></div>
+  </div>
+
+  <hr>
+  <div class="sec">
+    <p class="cap" style="margin:0">Dewan Seri Melati</p>
+    <p class="it" style="margin:4px 0 0">Jalan Contoh 1, Kuala Lumpur</p>
+    <div class="row"><a class="btn" id="gmap" target="_blank" rel="noopener">Google Maps</a><a class="btn alt" id="waze" target="_blank" rel="noopener">Waze</a></div>
+  </div>
+
+  <hr>
+  <div class="sec">
+    <p class="cap" style="margin:0">Hubungi Kami</p>
+    <div id="ctl"></div>
+  </div>
+
+  <hr>
+  <div class="sec">
+    <p class="cap" style="margin:0">Kehadiran &amp; Ucapan</p>
+    <p class="it" style="margin:6px 0 0">Mohon maklumkan kehadiran anda dan tinggalkan doa untuk kami.</p>
+    <div class="row"><a class="btn" id="formBtn" target="_blank" rel="noopener">Isi Borang RSVP</a></div>
+  </div>
+
+  <hr>
+  <div class="sec">
+    <p class="cap" style="margin:0">Tanda Kasih</p>
+    <p class="it" style="margin:6px 0 0">Kehadiran anda sudah cukup bermakna. Jika ingin memberi:</p>
+    <p style="margin:12px 0 0">Maybank</p>
+    <p class="acc" id="acc">1234 5678 9012</p>
+    <p style="margin:0">Faiq bin Contoh</p>
+    <div class="row"><button class="btn alt" id="copy">Salin nombor akaun</button></div>
+  </div>
+
+  <hr>
+  <p class="it sec">Semoga Allah memberkati majlis ini. Terima kasih atas kehadiran dan doa anda.</p>
+  <p class="names" style="font-size:40px">Faiq &amp; Fatin</p>
 </main>
-<footer>Terima kasih kerana menjadi sebahagian daripada hari bahagia kami.<br>Faiq &amp; Fatin</footer>
 
 <script>
 const C={
- groom:"Faiq",bride:"Fatin",
  start:"2026-12-05T11:00:00+08:00",end:"2026-12-05T16:00:00+08:00",
+ title:"Walimatul Urus Faiq & Fatin",
  venue:"Dewan Seri Melati, Jalan Contoh 1, Kuala Lumpur",
  formUrl:"https://forms.gle/GANTI-DENGAN-LINK-GOOGLE-FORM",
+ song:"lagu.mp3",
  contacts:[{n:"Faiq (Pengantin Lelaki)",p:"60120000000"},{n:"Puan Rohana (Ibu Pengantin)",p:"60121111111"}]
 };
-const $=id=>document.getElementById(id), q=encodeURIComponent;
-let guest="";
-try{guest=(new URLSearchParams(location.search).get("to")||"").slice(0,60)}catch(e){}
-const toTxt=guest?`Kepada: <b>${guest.replace(/[<>&"]/g,"")}</b>`:"Kepada Tetamu Yang Dihormati";
-$("heroTo").innerHTML=toTxt;$("cvTo").innerHTML=toTxt;
+const $=id=>document.getElementById(id),q=encodeURIComponent;
 
-const fmt=d=>d.toISOString().replace(/[-:]|\.\d{3}/g,"");
-$("gcal").href=`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${q("Walimatul Urus "+C.groom+" & "+C.bride)}&dates=${fmt(new Date(C.start))}/${fmt(new Date(C.end))}&location=${q(C.venue)}`;
+/* kepada tetamu: ?to=Nama */
+let g="";try{g=(new URLSearchParams(location.search).get("to")||"").slice(0,60)}catch(e){}
+["to","cvTo"].forEach(id=>{const e=$(id);if(g){e.textContent="Kepada: "+g}else{e.textContent="Kepada Tetamu Yang Dihormati"}});
+
+/* gambar pilihan: guna kalau fail wujud */
+function probe(src,fn){const i=new Image();i.onload=fn;i.src=src}
+probe("bg.jpg",()=>{$("bg").classList.add("has");$("cover").classList.add("has")});
+probe("bunga.png",()=>$("flora").classList.add("has"));
+
+/* pautan */
+const f=d=>d.toISOString().replace(/[-:]|\.\d{3}/g,"");
+$("gcal").href=`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${q(C.title)}&dates=${f(new Date(C.start))}/${f(new Date(C.end))}&location=${q(C.venue)}`;
 $("gmap").href="https://www.google.com/maps/search/?api=1&query="+q(C.venue);
 $("waze").href="https://waze.com/ul?q="+q(C.venue)+"&navigate=yes";
-
-$("ct").innerHTML=C.contacts.map(c=>`<div class="card"><span>${c.n}</span><span class="row"><a class="btn alt" href="tel:+${c.p}">Telefon</a><a class="btn" href="https://wa.me/${c.p}" target="_blank" rel="noopener">WhatsApp</a></span></div>`).join("");
 $("formBtn").href=C.formUrl;
+$("ctl").innerHTML=C.contacts.map(c=>`<div class="ct"><span>${c.n}</span><span class="row" style="margin:0"><a class="btn alt" href="tel:+${c.p}">Telefon</a><a class="btn" href="https://wa.me/${c.p}" target="_blank" rel="noopener">WhatsApp</a></span></div>`).join("");
 
-function tick(){let t=Math.max(0,new Date(C.start)-Date.now())/1000;
+/* kira detik */
+function tick(){const t=Math.max(0,new Date(C.start)-Date.now())/1000;
  $("d").textContent=Math.floor(t/86400);$("h").textContent=Math.floor(t%86400/3600);$("m").textContent=Math.floor(t%3600/60);$("s").textContent=Math.floor(t%60)}
 tick();setInterval(tick,1000);
 
-$("copy").onclick=async()=>{
- const n=$("acc").textContent.replace(/\s/g,"");
+/* salin akaun */
+$("copy").onclick=async()=>{const n=$("acc").textContent.replace(/\s/g,"");
  try{await navigator.clipboard.writeText(n);$("copy").textContent="Disalin"}catch(e){$("copy").textContent="Tekan lama untuk salin"}
  setTimeout(()=>$("copy").textContent="Salin nombor akaun",2000)};
 
-/* petals */
-const P=$("petals");
-for(let i=0;i<14;i++){const e=document.createElement("i");
- e.style.cssText=`left:${Math.random()*100}%;--dx:${Math.random()*120-60}px;animation-duration:${9+Math.random()*9}s;animation-delay:${-Math.random()*14}s;transform:scale(${.6+Math.random()*.8})`;P.appendChild(e)}
+/* kelopak */
+for(let i=0;i<12;i++){const e=document.createElement("i");
+ e.style.cssText=`left:${Math.random()*100}%;--dx:${Math.random()*120-60}px;animation-duration:${10+Math.random()*9}s;animation-delay:${-Math.random()*16}s;transform:scale(${.6+Math.random()*.7})`;$("petals").appendChild(e)}
 
-/* song: soft generated melody (swap with your own track later) */
-let ac=null,timer=null,on=false;
-const notes=[261.6,329.6,392,523.3,392,329.6,293.7,349.2,440,587.3,440,349.2];
-function play(){let i=0;timer=setInterval(()=>{const o=ac.createOscillator(),g=ac.createGain();
- o.type="sine";o.frequency.value=notes[i++%notes.length];g.gain.setValueAtTime(.0001,ac.currentTime);
- g.gain.exponentialRampToValueAtTime(.12,ac.currentTime+.05);g.gain.exponentialRampToValueAtTime(.0001,ac.currentTime+1.1);
- o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+1.2)},600)}
-function toggle(){
- if(!on){try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();ac.resume();play();on=true;$("music").textContent="♪"}catch(e){}}
- else{clearInterval(timer);on=false;$("music").textContent="×"}}
-$("music").onclick=toggle;
-$("openBtn").onclick=()=>{$("cover").classList.add("open");if(!on)toggle();window.scrollTo(0,0)};
+/* lagu: letak lagu.mp3 sebelah index.html. Butang muncul bila fail wujud */
+const au=new Audio();au.loop=true;au.volume=.6;au.src=C.song;
+au.addEventListener("canplay",()=>{$("music").hidden=false});
+au.addEventListener("play",()=>$("music").textContent="♪");
+au.addEventListener("pause",()=>$("music").textContent="×");
+$("music").onclick=()=>{au.paused?au.play().catch(()=>{}):au.pause()};
+$("openBtn").onclick=()=>{$("cover").classList.add("open");au.play().catch(()=>{});window.scrollTo(0,0)};
 </script>
 </body>
 </html>
