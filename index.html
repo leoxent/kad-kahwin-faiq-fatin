@@ -143,7 +143,7 @@ let g="";try{g=(new URLSearchParams(location.search).get("to")||"").slice(0,60)}
 
 /* gambar pilihan: guna kalau fail wujud */
 function probe(src,fn){const i=new Image();i.onload=fn;i.src=src}
-probe("bg.jpg",()=>{$("bg").classList.add("has");$("cover").classList.add("has")});
+probe("images/bg.jpg",()=>{$("bg").classList.add("has");$("cover").classList.add("has")});
 probe("bunga.png",()=>$("flora").classList.add("has"));
 
 /* pautan */
